@@ -6,7 +6,7 @@ const dates = ['Feb 15', 'Feb 16', 'Feb 17'];
 export default function One() {
 
   return (
-    <div className="w-screen h-screen p-10 flex flex-col justify-center items-center bg-amber-300">
+    <div className="w-screen h-screen relative p-10 bg-amber-300">
       {/* 
         1. Give the page a full-screen or large app-like background.
         2. Add padding around the Gantt.
@@ -21,7 +21,7 @@ export default function One() {
 // MAIN GANTT CONTAINER
 const GanttShell = () => {
   return (
-    <div className="w-[90%] h-[90%] bg-blue-500 rounded-2xl border overflow-hidden">
+    <div className="w-[90%] h-[90%] bg-blue-500 rounded-2xl border overflow-hidden flex flex-col justify-center items-center">
       {/*
         GOAL:
         Make Header stay visible while BodyScroll scrolls vertically.
@@ -163,7 +163,7 @@ const BodyScroll = () => {
         - hover states go here
       */}
       {/* Row */}
-      <div className="w-full h-fit flex flex-col overflow-scroll">
+      <div className="w-full h-fit flex flex-col">
         {[1,2,3,4, 5, 6, 7, 8, 9].map((row, index) => (
         <div key={index} className="w-full h-50 flex flex-row">
         {/* left task info */}

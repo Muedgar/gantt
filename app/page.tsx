@@ -1,9 +1,10 @@
 'use client'
 
-import One from "./components/1_30/1"
+import Part_2_1 from "./components/2_30/1"
+import Part_3_1 from "./components/3_30/1"
 
 export default function Home() {
   return (
-    <One />
+    <Part_3_1 />
   )
 }
